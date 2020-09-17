@@ -132,7 +132,7 @@ extern char **environ;                  /* User environment array */
 #ifdef __NetBSD__
 extern const char *const sys_errlist[];
 #else
-extern char *sys_errlist[];
+extern __const char *__const sys_errlist[];
 #endif
 #endif
 

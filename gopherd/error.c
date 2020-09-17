@@ -69,6 +69,8 @@
 #include "serverutil.h"		/* For LOGGopher */
 #include "compatible.h"
 
+#include <stdlib.h>
+
 /*
  * Error handling routines from Stevens: UNIX network programming
  * pp 722-731
@@ -258,7 +260,7 @@ extern int sys_nerr;		/* # of error message strings in sys table */
 #ifdef __NetBSD__
 extern const char *const sys_errlist[];	/* the system error message table */
 #else
-extern char *sys_errlist[];	/* the system error message table */
+extern __const char *__const sys_errlist[];
 #endif
 
 #ifdef SYS5

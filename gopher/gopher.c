@@ -1182,7 +1182,7 @@ popgopher(GopherDirObj **ZeDir)
 #else
 extern int h_errno;
 extern int sys_nerr;
-extern char *sys_errlist[];
+extern __const char *__const sys_errlist[];
 extern int  errno;
 #endif
 

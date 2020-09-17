@@ -6,6 +6,8 @@
 #include "Dirent.h"
 #include "Stat.h"
 
+#include <string.h>
+
 #ifndef NO_AUTHENTICATION
 
 GGroup*

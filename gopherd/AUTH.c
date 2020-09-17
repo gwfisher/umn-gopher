@@ -80,6 +80,8 @@
 
 #include "Debug.h"
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 #ifndef VMS
 #  include <pwd.h>
