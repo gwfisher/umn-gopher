@@ -131,10 +131,13 @@ extern int errno;
 extern char **environ;                  /* User environment array */
 #ifdef __NetBSD__
 extern const char *const sys_errlist[];
-#else
+#ifdef __hpux
 extern __const char *__const sys_errlist[];
+#else
+extern char *sys_errlist[];
 #endif
 #endif
+
 
 /*** VMS needs special interrupt and subprocess handling ***/
 

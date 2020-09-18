@@ -134,10 +134,10 @@ static char *DLnames[] = {
      };
 
 static char *DLcmds[] = { /* Cmds for ascii files: FILE */
-     "sz ",
-     "sb ",
-     "sx -k ",
-     "sx ",
+     "lsz ",
+     "lsb ",
+     "lsx -k ",
+     "lsx ",
      "kermit -q -s ",
 #ifdef VMS
      "type ",
